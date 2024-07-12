@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>ANKIT KUMAR - Frontend Web Developer</title>
+
+    <meta name="title" content="ANKIT KUMAR - Frontend Web Developer">
+    <meta name="description" content="ANKIT KUMAR - Passionate Frontend Web Developer creating beautiful and responsive websites. Explore my portfolio and blog for tech insights.">
+    <meta name="keywords" content="ANKIT KUMAR, Web Developer, Frontend Developer, Portfolio, Blog, Tech Insights">
+    <meta name="author" content="ANKIT KUMAR">
+
+    <!-- Open Graph Meta Tags / Facebook -->
+    <meta property="og:title" content="ANKIT KUMAR - Frontend Web Developer">
+    <meta property="og:description" content="Passionate about crafting beautiful and responsive websites. Explore my portfolio and blog for tech insights.">
+    <meta property="og:image" content="assets/images/banner.webp">
+    <meta property="og:url" content="/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon">
+
+    <!-- Google Fonts: Rubik -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik&amp;display=swap">
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preload Important resources -->
+    <link rel="preload" href="aos.css" as="style" >
+    <link rel="preload" href="owl.carousel.min.css" as="style" >
+    <link rel="preload" href="bootstrap.min.css" as="style" />
+    <link rel="preload" href="bootstrap-icons.min.css" as="style" />
+    <link rel="preload" href="style.css" as="style" />
+
+   
+</head>
+
+<body data-bs-theme="dark" data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    
+    <!-- Header -->
+    <header id="header">
+        <nav id="navbar" class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="/" class="navbar-brand logo">
+                    <span><</span>
+                    <span class="logo-name">ANKIT KUMAR</span>
+                    <span>/></span>
+                </a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarMenu">
+                    <div class="offcanvas-header">
+                        <a href="/" class="offcanvas-title navbar-brand logo" id="offcanvasNavbarMenu" data-aos="fade-down" data-aos-delay="600">
+                            <span><</span>
+                            <span class="logo-name">ANKIT KUMAR</span>
+                            <span>/></span>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-dismiss="offcanvas" aria-label="Close Navigation Menu"><i class="fa-solid fa-sliders "></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav-underline justify-content-end flex-grow-1">
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="500" data-bs-dismiss="offcanvas"><a href="#hero" class="nav-link active" aria-current="page">Home</a></li>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="600" data-bs-dismiss="offcanvas"><a href="#about" class="nav-link">About</a></li>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="700" data-bs-dismiss="offcanvas" ><a href="#skills" class="nav-link">Skills</a></li>
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="800" data-bs-dismiss="offcanvas"><a href="#Project" class="nav-link">Projects</a></li>
+                        
+                            <li class="nav-item" data-aos="fade-down" data-aos-delay="1000" data-bs-dismiss="offcanvas"><a href="#contact" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn border-0" id="switchTheme" data-aos="fade-down" data-aos-delay="600">switch</button>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation Menu" data-aos="fade-down" data-aos-delay="600"><i class="fa-solid fa-sliders"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">     
+            <div class="row about-content">
+               
+                <div class="col-lg-7 order-lg-1 hero-content">
+                    <span class="h3" data-aos="fade-up" data-aos-delay="0">Namaste, I'm</span>
+                    <h1 class="name" data-aos="fade-up" data-aos-delay="200"><span>ANKIT KUMAR</h1>
+                    <button type="button" class="btn btn-sm mt-3 mb-3 btn-showcase"  data-aos="fade-up" data-aos-delay="400"><i class="fa-regular fa-star "></i> Frontend /UI Developer</button>
+                    <p class="tagline mb-3" data-aos="fade-up" data-aos-delay="600">Started <span class="underline">unintentionally</span> with messy Discord bot templates in 2021. Now, creating beautiful and responsive websites and templates for everyone to explore! But this time <span class="underline">intentionally</span>.</p>
+                    <div class="social-icons pb-2 pt-2 mb-2">
+                        <a href="https://github.com/krankit2000/" target="_blank" class="github" data-aos="fade-up" data-aos-delay="620"><i class="fa-brands fa-github fa-2xl" style="color: #080808;"></i></a>
+                      
+                        <a href="https://www.linkedin.com/in/krankit2000/" target="_blank" class="linkedin" data-aos="fade-up" data-aos-delay="690"><i class="fa-brands fa-linkedin fa-2xl" style="color: #005eff;"></i></a>
+                     
+                    </div>
+                    <div class="d-flex call-to-action">
+                        <a href="mailto:ankitkumar897955@gmail.com.com" target="_blank" data-aos="fade-up" data-aos-delay="700"><button type="button" class="btn me-4 primary-bg-btn"><i class="fa-solid fa-envelope fa-xl" style="color: #f7f4f4;"></i> Contact Me</button></a>
+                        <a href="/assets/images/Cv/Ankit front-end.pdf" target="_self" class="myCV" download  data-aos="fade-up" data-aos-delay="800"><button type="button" class="btn btn-light secondary-bg-btn">View Cv <i class="fa-solid fa-file-arrow-down fa-xl" style="color: #4c8bf0;"></i></button></a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Things I Love -->
+    <section id="things-i-love">
+        <div class="container">
+            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Interests</span></h6>
+            <h2 class="section-heading text-center">Things I Love </h2>
+            <div class="row justify-content-center pt-3 gy-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
+                    <div class="card">
+                        <div class="circle-container">
+                            <div class="circle"><i class="fa-solid fa-droplet fa-2xl" style="color: #f29950;"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">Designing</p>
+                            <p class="card-text">I love designing. When I see something that needs improvement, I enjoy making it better visually. I pay attention to every detail, whether it's a graphic or a user interface. My goal is to create designs that catch the eye and inspire others.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
+                    <div class="card">
+                        <div class="circle-container">
+                            <div class="circle"><i class="fa-solid fa-code fa-2xl"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">Developing</p>
+                            <p class="card-text">After designing, I dive into development. Coding is where I bring designs to life, turning concepts into digital experiences. Each line of code reflects my vision for functionality and elegance, showcasing my commitment to excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" >
+                    <div class="card">
+                        <div class="circle-container">
+                            <div class="circle"><i class="fa-solid fa-mug-hot fa-2xl" style="color: #fff9ff;"></i></div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title">Expanding</p>
+                            <p class="card-text">Expanding beyond creation, I optimize. From templates to full websites, I refine post-development. Leveraging blogging and basic SEO, I enhance visibility and impact online. Each step maximizes reach and effectiveness online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Me -->
+    <section id="about">
+        <div class="container">
+            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">But who am I?</span></h6>
+            <h2 class="section-heading text-center">About Me </h2>
+            <p class="text-center muted-text mt-3 mb-4">My store in a nutshell ;)</p>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="200">
+               
+                <div class="col-lg-7">
+                    <p class="bio">
+                        Hey there, I'm ANKIT, a 24-year-old coding enthusiast from India. I'm currently doing part-time blogging with my full-time journey as a frontend web developer. My coding journey began with experimenting on Discord bots. Now, I'm pursuing a master's degree in computer applications to deepen my skills and passion for web development.
+                        </br></br>
+                        My main goal in coding is simple: to create things that look great and serve a purpose. Whether it's designing sleek designs or expanding web applications, I'm always exploring new ideas to make something awesome. Apart from coding, when I'm not coding or catching up on news, you can often find me immersed in the world of battle royale games.
+                        </br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <p class="text-center"><span class="btn btn-sm theme-button theme-text">Things i am good at</span></p>
+            <p class="section-heading text-center">Primary skilled in the below items:</p>
+            <!-- <p class="text-center muted-text mt-3 mb-4">Primary skilled in the below items:</p> -->
+            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 skills-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image skill-image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png?20170517184425" alt="HTML">
+                        <p class="skill-name">HTML</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image  skill-image1 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/120px-CSS3_logo.svg.png" alt="CSS"/>
+                        <p class="skill-name">CSS</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image skill-image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png?20141107110902" alt="JavaScript">
+                        <p class="skill-name">JS</p>
+                    </div>
+                </div>
+             
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/120px-Sass_Logo_Color.svg.png?20150315202757" alt="Sass">
+                        <p class="skill-name">Sass</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/120px-Bootstrap_logo.svg.png?20210507000024" alt="Bootstrap">
+                        <p class="skill-name">Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <img class="skill-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="React">
+                        <p class="skill-name">React</p>
+                    </div>
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
+ 
+   
+    <!-- Tools -->
+    <section id="tools">
+        <div class="container">
+            <p class="text-center"><span class="btn btn-sm theme-button theme-text">   Tools i can work on</span></p>
+            <h6 class="section-heading text-center">Tools i use to solve the problems.:</h6>
+            <!-- <p class="text-center muted-text mt-3 mb-4"> Tools i use to solve the problems.:</p> -->
+            <div class="row justify-content-center row-cols-2 row-cols-md-3 row-cols-lg-6 mt-4 gy-4 tools-container" data-aos="fade-down" data-aos-delay="200">
+                <div class="col">
+                    <div class="tool">
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519" alt="VSCode">
+                        <p class="tool-name">VSCode</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tool">
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Github-desktop-logo-symbol.svg/120px-Github-desktop-logo-symbol.svg.png" alt="Github">
+                        <p class="tool-name">Github</p>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="tool">
+                        <img class="tool-image1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/400px-Figma-logo.svg.png?20190122211436" alt="Figma">
+                        <p class="tool-name">Figma</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="tool">
+
+                        
+                        <img class="tool-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/120px-ChatGPT_logo.svg.png?20230903231118" alt="ChatGPT">
+                        <p class="tool-name">ChatGPT</p>
+                    </div>
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Project -->
+    <section id="Project">
+        <div class="container">
+            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">What I've done?</span></h6>
+            <h2 class="section-heading text-center">Projects</h2>
+          
+            <div class="row mt-4 gy-4" data-aos="fade-down" data-aos-delay="200">
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="Project">
+
+                            <a href="https://weathercurrentcheck.netlify.app/">
+                            <p class="description">
+                                The weather app will be show the temperature of a location , current weather, weather conditions,
+                                relative humidity And wind speed .
+                            </p>
+                            <div class="pic">
+                                <img src="data:image/jpeg;base64,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" alt="WAATHER APP">
+                            </div>
+                            <div class="detail">
+                                <h3 class="name">WEATHER APP</h3>
+                                <small class="role" >HTML5,CSS3,JAVASCRIPT,WEATHER API</small>
+                            </div>
+                        </a>
+                        </div>
+         
+                        <div class="Project">
+
+                            <a href="https://password-generator-io.netlify.app/">
+                            <p class="description">
+                                Random password Generate a password using parameters that a user sets, including-upper Case,lower-case, numeric and mixed-case letter.
+                            </p>
+                            <div class="pic">
+                                <img src="https://cdn-icons-png.freepik.com/256/1689/1689348.png?ga=GA1.1.1618737156.1719406084&semt=ais_hybrid" alt="Random password Generate Pic">
+                            </div>
+                            <div class="detail">
+                                <h3 class="name">  Random password Generate</h3>
+                                <small class="role">HTML5,CSS3,JAVASCRIPT</small>
+                            </div>
+                        </a>
+                        </div>
+
+                       <div class="Project">
+                            <p class="description">
+                                A color picker build web app using react this web application that allows users to type color and identify colors from an image or a set of predefined color palettes. It helps users accurately choose specific colors by providing a color and , color codes.
+                            </p>
+                            <div class="pic">
+                                <img src="https://cdn-icons-png.freepik.com/256/15123/15123397.png?ga=GA1.1.1618737156.1719406084&semt=ais_hybrid" alt="color picker  Pic" class="">
+                            </div>
+                            <div class="detail">
+                                <h3 class="name">Color picker </h3>
+                                <small class="role">HTML5,CSS3,REACT</small>
+                            </div>
+                        </div>
+
+                        <div class="Project">
+                            <p class="description">
+                                This YouTube clone is the perfect investment for anyone who wants to take control of their online presence and build a platform that truly reflects their brand and vision. Unlock your creative potential, connect with your audience, and revolutionize video sharing - all with the power of this cutting-edge solution
+                            </p>
+                            <div class="pic">
+                                <img src="https://cdn-icons-png.freepik.com/256/889/889241.png?ga=GA1.1.1618737156.1719406084&semt=ais_hybrid" alt="YouTube Clone Pic">
+                            </div>
+                            <div class="detail">
+                                <h3 class="name">YouTube Clone</h3>
+                                <small class="role">HTML5,CSS3,JAVASCRIPT</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h6 class="text-center"><span class="btn btn-sm theme-button theme-text">Get In Touch</span></h6>
+            <!-- <h2 class="section-heading text-center MSG">Get In Touch</h2> -->
+            <p class="text-center muted-text mt-3 mb-4">Interested in working together? We should schedule a time to chat. I'll bring the coffee.</p>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="500">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form  action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="cdf6eb98-29ed-45ad-b2a3-715a024a0d1a">
+                            <div class="row g-2">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="subject" name="subject"  placeholder="Subject *" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea style="resize: none;" class="form-control" id="message" name="message" rows="5" placeholder="Your message *" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn primary-bg-btn mt-2">Send Message<i class="fa-solid fa-square-arrow-up-right fa-xl"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p class="text-center copyright-text">Made with <span>Bootstrap, HTML, CSS, JS</span> <span class="heart-icon"><i class="fa-solid fa-heart fa-xl" style="color: #ff3d3d;"></i></span> by <span>ANKIT</span>.</p>
+        </div>
+    </footer>
+
+    <button class="btn" id="backToTopButton" onclick="scrollToTop()" style="display: none;">
+        <span aria-label="Back to top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+              </svg>
+        </span>
+    </button>
+
+    <!-- JavaScript -->
+
+
+    <script src="https://kit.fontawesome.com/04b67efb7b.js" crossorigin="anonymous"></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/jquery-3.7.1.min.js" defer></script>
+    <script src="assets/js/owl.carousel.min.js" defer></script>
+    <script src="assets/js/bootstrap.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
