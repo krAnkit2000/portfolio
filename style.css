@@ -730,9 +730,40 @@ a:hover{
     padding: 100px 0px 80px 0px;
 }
 
+
+
+
+/*--------------------------------------------------------------
+# git  Section
+--------------------------------------------------------------*/
+
+
+
+.git_contru{
+    margin: 12px auto;
+    display: block;
+    width: 50%;
+}
+
+.git_contru span{
+ 
+    text-align: center;
+    margin-bottom: 3rem;
+
+    background: var(--secondary-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.git_contru img {
+    margin-bottom: 4rem;
+}
+
 /*--------------------------------------------------------------
 # Project  Section
 --------------------------------------------------------------*/
+
 
 #Project {
     /* padding: 100px 0px; */
