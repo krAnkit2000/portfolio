@@ -1,8 +1,4 @@
 
-
-
-
-
 /* Style rules for dark mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -64,7 +60,7 @@ a:hover{
 /* Dark Mode */
 [data-bs-theme="dark"] {
     position: relative;
-    color: rgb(255, 255, 255/1);
+    color: White;
     z-index: 0;
 }
 
@@ -84,10 +80,10 @@ a:hover{
 
 /* Dark Mode styles */
 [data-bs-theme="dark"] {
-    --text-color: #fff;
-    --muted-text: #9a9a9a;
+    --text-color: #fffbfb;
+    --muted-text: #ffffff;
     --bg-color: #212121;
-    --btn-color: #fff;
+    --btn-color: #fff3f3;
     --offcanvas-bg: rgba(0,0,0,0.9);
     --offcanvas-border-color: rgba(255, 255, 255, 0.2);
 }
@@ -554,7 +550,7 @@ a:hover{
 #about{
 /* padding: 12em ;
     padding: 20em 0; */
-    margin-top: -14rem;
+    margin-top: -10rem;
     margin-bottom: -13rem;
     padding:16em 0px;
     background-image: url(/assets/images/grid.png);
@@ -642,11 +638,9 @@ a:hover{
 --------------------------------------------------------------*/
 
 #skills{
-    /* padding: 12em 0;
-    margin-bottom: -27em; */
-    /* padding:  0px; */
+
     min-height: 100vh;
-    padding: 100px 0px 80px 0px;
+    padding: 20px 0px 50px 0px;
 }
 
 .skill{
@@ -674,7 +668,7 @@ a:hover{
 }
 
 .skill-name{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 17px;
     padding-top: 5px;
     margin: 0;
@@ -685,8 +679,8 @@ a:hover{
 --------------------------------------------------------------*/
 
 #tools{
-    padding: 28em 0;
-    padding: 100px 0px 80px 0px;
+    /* padding: 28em 0; */
+    padding: 80px 0px 80px 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
     min-height: 100vh;
@@ -722,6 +716,22 @@ a:hover{
     margin: 0;
 }
 
+
+
+
+.postman{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 28px 0px;
+    border-radius: 25px;
+    backdrop-filter: blur(300px);
+    -webkit-backdrop-filter: blur(300px);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+}
+
 /*--------------------------------------------------------------
 # Timeline Section
 --------------------------------------------------------------*/
@@ -739,10 +749,10 @@ a:hover{
 
 
 
-.git_contru{
-    margin: 12px auto;
+.git_contru {
+    margin: 14px auto;
     display: block;
-    width: 50%;
+    width: 95%;
 }
 
 .git_contru span{
@@ -966,4 +976,52 @@ color: #ff6600;
 }
 .fa-square-arrow-up-right{
     margin-inline-start: 9px;
+}
+#sql{
+    height: fit-content !important;
+    padding: 5px !important;
+
+
+
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 18px 0px;
+    border-radius: 25px;
+    backdrop-filter: blur(300px);
+    -webkit-backdrop-filter: blur(300px);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+}
+
+.Tailwind{
+    height: fit-content !important;
+    padding: 25px !important;
+ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 18px 0px;
+    border-radius: 25px;
+    backdrop-filter: blur(300px);
+    -webkit-backdrop-filter: blur(300px);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336); 
+}
+.Next{
+    height: fit-content !important;
+    padding: 10px 0px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    /* padding: 18px 0px; */
+    border-radius: 25px;
+    backdrop-filter: blur(300px);
+    -webkit-backdrop-filter: blur(300px);
+    box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336);
+    -webkit-box-shadow: 0 0 1px 0 rgba(144,81,227,.5), 0 0 0.5px 0.5px rgba(141,53,229,.336); 
 }
