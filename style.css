@@ -501,7 +501,7 @@ a:hover{
 }
 
 #things-i-love .card {
-        box-shadow: inset 1px 1px 4px 2px;
+        box-shadow: inset 1px 1px 3px 2px !important;
     background-color: transparent;
     padding: 10px;
     border-radius: 24px;
@@ -645,7 +645,7 @@ a:hover{
 }
 
 .skill{
-      box-shadow: inset 1px 1px 5px 2px;
+      box-shadow: inset 1px 1px 5px 2px !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -689,7 +689,7 @@ a:hover{
 }
 
 .tool{
-    box-shadow: inset 1px 1px 5px 2px;
+    box-shadow: inset 1px 1px 5px 2px !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -770,7 +770,7 @@ a:hover{
 
 .git_contru img {
     margin-bottom: 2rem;
-        box-shadow: inset 1px 1px 5px 2px;
+        box-shadow: inset 1px 1px 5px 2px !important;
 }
 
 /*--------------------------------------------------------------
