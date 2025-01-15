@@ -723,6 +723,7 @@ a:hover{
 
 
 .postman{
+    box-shadow: inset 1px 1px 5px 2px !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -984,9 +985,7 @@ color: #ff6600;
 #sql{
     height: fit-content !important;
     padding: 5px !important;
-
-
-
+box-shadow: inset 1px 1px 5px 2px !important;
 
     display: flex;
     align-items: center;
