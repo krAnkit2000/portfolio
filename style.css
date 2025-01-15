@@ -771,6 +771,8 @@ a:hover{
 }
 
 .git_contru img {
+    border-radius: 13px;
+    padding-block: 8px;
     margin-bottom: 2rem;
     box-shadow: inset 1px 1px 5px 2px !important;
 }
