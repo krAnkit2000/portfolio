@@ -402,8 +402,9 @@ a:hover{
 
 #hero {
     position: relative;
-    padding: 160px 0px 50px 0px;
+    padding: 160px 0px 0px 0px;
     min-height: 100vh;
+
 }
 
 #hero .name {
