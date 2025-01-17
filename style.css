@@ -649,7 +649,7 @@ a:hover{
 
 #skills{
 
-    min-height: 100vh;
+/*     min-height: 100vh; */
     padding: 20px 0px 50px 0px;
 }
 
@@ -694,7 +694,7 @@ a:hover{
     padding: 80px 0px 80px 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
-    min-height: 100vh;
+/*     min-height: 100vh; */
     /* margin-bottom: -8rem; */
 }
 /* #tools .container{
@@ -796,7 +796,7 @@ a:hover{
 
 #Project {
     /* padding: 100px 0px; */
-    min-height: 100vh;
+/*     min-height: 100vh; */
     background-image: url(/assets/images/grid.png);
     background-size: contain;
 }
