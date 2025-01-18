@@ -560,7 +560,7 @@ a:hover{
     padding:16em 0px;
     background-image: url(/assets/images/grid.png);
     background-size: contain;
-    min-height: 100vh;
+/*     min-height: 100vh; */
 }
 
 .about-portrait{
@@ -904,7 +904,7 @@ color: #ff6600;
     margin-top: -5rem;
    background-repeat: no-repeat;
     padding:  0;
-    min-height: 100vh;
+/*     min-height: 100vh; */
     background-image: url(/assets/images/banner.webp);
     background-size: cover;
 }
