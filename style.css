@@ -799,10 +799,13 @@ a:hover{
 /*     min-height: 100vh; */
     background-image: url(/assets/images/grid.png);
     background-size: contain;
+    
 }
 
 .Project{
     margin: 0 15px;
+      height: auto;
+    min-height: 11px !important;
 }
 
 .Project .description{
