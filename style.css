@@ -806,7 +806,7 @@ a:hover{
     margin: 0 15px;
 
     background: transparent;
-    height: 33rem;
+    height: 33rem !important;
 }
 
 .Project .description{
