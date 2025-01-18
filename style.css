@@ -804,8 +804,9 @@ a:hover{
 
 .Project{
     margin: 0 15px;
-      height: auto;
-    min-height: 11px !important;
+
+    background: transparent;
+    height: 33rem;
 }
 
 .Project .description{
