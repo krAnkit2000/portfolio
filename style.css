@@ -679,7 +679,7 @@ a:hover{
 
 .webserviec{
     text-align: center;
-    font-size: 15px;
+    font-size: 15px !important;
 }
 .skill-name{
     letter-spacing: 1px;
