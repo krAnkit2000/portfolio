@@ -545,11 +545,19 @@ position: relative;
 }
 
 #things-i-love .card-text{
-    text-align: center;
+    text-align: justify;
     font-size: 14px;
     color: var(--muted-text);
 }
 
+
+
+
+
+
+#expanding{
+    padding: 0px 0px 0.5pc !important;
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
