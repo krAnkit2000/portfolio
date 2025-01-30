@@ -694,8 +694,9 @@ position: relative;
 /*     font-size: 16px !important; */
 }
 .skill-name{
+    text-align: center;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 15px;
     padding-top: 5px;
     margin: 0;
 }
