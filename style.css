@@ -681,7 +681,9 @@ position: relative;
     width: 71px;
     padding: 3px;
 }
-
+#sql{
+    min-height: 7.5rem;
+}
 .skill-image1{
     width: 58px;
     padding: 0px;
