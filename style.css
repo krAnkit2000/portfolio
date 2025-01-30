@@ -663,6 +663,7 @@ position: relative;
 }
 
 .skill{
+        min-height: 7.5rem;
       box-shadow:-1px -1px 16px 1px rgba(255, 255, 255, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3) !important;
     display: flex;
     align-items: center;
@@ -685,14 +686,14 @@ position: relative;
     width: 58px;
     padding: 0px;
 }
-#webserviec{
+/* #webserviec{
     padding: 15px 0px;
 }   
 
 .webserviec{
     text-align: center;
-/*     font-size: 16px !important; */
-}
+
+} */
 .skill-name{
     text-align: center;
     letter-spacing: 1px;
