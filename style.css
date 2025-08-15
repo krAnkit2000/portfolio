@@ -902,7 +902,7 @@ width: max-content;
 }
 
 /* Mobile: below 768px */
-@media (max-width: 768px) {
+@media (max-width: 568px) {
     #mobile {
         display: block; /* Mobile slider show */
     }
