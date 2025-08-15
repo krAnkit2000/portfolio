@@ -861,11 +861,11 @@ width: max-content;
     .Project { flex: 0 0 90%; margin: 0 auto; height: auto; }
     
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #desktop {
         display: none;
     }
-}
+} */
 
 /* Continuous scroll animation */
 @keyframes scroll {
@@ -885,7 +885,7 @@ width: max-content;
     display: none; /* scrollbar hide */
 }
 
-
+/* Default: desktop visible, mobile hidden */
 #desktop {
     display: block;
 }
@@ -894,17 +894,30 @@ width: max-content;
     display: none;
 }
 
-/* Tablet: 768px - 1024px */
+/* Tablet & mobile: screen ≤ 1024px */
 @media (max-width: 1024px) {
     #desktop {
-        display: none; /* Desktop slider hide */
+        display: none;  /* Hide desktop slider */
+    }
+    #mobile {
+        display: block; /* Show mobile slider */
     }
 }
 
-/* Mobile: below 768px */
-@media (max-width: 568px) {
+/* Mobile: screen ≤ 640px */
+@media (max-width: 640px) {
+    #desktop {
+        display: none; /* Already hidden, optional */
+    }
     #mobile {
-        display: block; /* Mobile slider show */
+        display: block; /* Show mobile slider */
+    }
+}
+
+/* Optional: Tablet specific style if needed (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #mobile {
+        display: block;
     }
 }
 
