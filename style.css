@@ -843,7 +843,7 @@ width: max-content;
 
 .Project {
     flex: 0 0 calc((100% - 40px) / 3);
-    background: linear-gradient(145deg, #fdfbfb, #ebedfa);
+    background: linear-gradient(145deg, #e8e7e7, #ebedfa);
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1), 0 6px 15px rgba(0,0,0,0.05);
@@ -857,7 +857,14 @@ width: max-content;
 }
 
 @media (max-width: 640px) {
+   
     .Project { flex: 0 0 90%; margin: 0 auto; height: auto; }
+    
+}
+@media (max-width: 768px) {
+    #desktop {
+        display: none;
+    }
 }
 
 /* Continuous scroll animation */
@@ -865,7 +872,44 @@ width: max-content;
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); } /* -50% because duplicate cards added */
 }
+/* mobile slider  */
 
+.sliderMobile {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.sliderMobile::-webkit-scrollbar {
+    display: none; /* scrollbar hide */
+}
+
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    #desktop {
+        display: none; /* Desktop slider hide */
+    }
+}
+
+/* Mobile: below 768px */
+@media (max-width: 768px) {
+    #mobile {
+        display: block; /* Mobile slider show */
+    }
+}
+
+
+/*  */
 
 
 .Project:hover {
@@ -891,9 +935,11 @@ width: max-content;
 /* Project Description */
 .description {
     font-size: 1rem;
-    color: #000000; /* dark slate for readability */
+ font-family: monospace;
+   font-weight: bold;
+    color: #413583; /* dark slate for readability */
     line-height: 1.6;
-    padding: 8px 12px;
+    padding: 2px 10px;
     text-align: justify;
     flex-grow: 1;
 }

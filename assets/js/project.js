@@ -37,7 +37,7 @@ const allProjects = [...projects, ...projects];
 
 allProjects.forEach(p => {
     slider.innerHTML += `
-        <div class="Project">
+        <div class="Project" id="desktop">
             <a href="${p.link}" target="_blank">
                 <img src="${p.img}" alt="${p.name}">
                 <p class="description">${p.description}</p>
@@ -52,46 +52,22 @@ allProjects.forEach(p => {
 });
 
 // for mobile slider 
+const sliderMobile = document.getElementById('project-slider-mobile');
 
-const sliderMobile = document.querySelector('.sliderMobile');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-sliderMobile.addEventListener('mousedown', (e) => {
-  isDown = true;
-  sliderMobile.classList.add('active');
-  startX = e.pageX - sliderMobile.offsetLeft;
-  scrollLeft = sliderMobile.scrollLeft;
-});
-sliderMobile.addEventListener('mouseleave', () => {
-  isDown = false;
-  sliderMobile.classList.remove('active');
-});
-sliderMobile.addEventListener('mouseup', () => {
-  isDown = false;
-  sliderMobile.classList.remove('active');
-});
-sliderMobile.addEventListener('mousemove', (e) => {
-  if(!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - sliderMobile.offsetLeft;
-  const walk = (x - startX) * 2; // scroll-fast
-  sliderMobile.scrollLeft = scrollLeft - walk;
+allProjects.forEach(p => {
+    sliderMobile.innerHTML += `
+        <div class="Project" id="mobile">
+            <a href="${p.link}" target="_blank">
+                <img src="${p.img}" alt="${p.name}">
+                <p class="description">${p.description}</p>
+                <div class="detail">
+                    <h3 class="name">${p.name}</h3>
+                    <small class="role">${p.tech}</small>
+                </div>
+            </a>
+        </div>
+    `;
 });
 
-// Touch events for mobile
-sliderMobile.addEventListener('touchstart', (e) => {
-  isDown = true;
-  startX = e.touches[0].pageX - sliderMobile.offsetLeft;
-  scrollLeft = sliderMobile.scrollLeft;
-});
-sliderMobile.addEventListener('touchend', () => {
-  isDown = false;
-});
-sliderMobile.addEventListener('touchmove', (e) => {
-  if(!isDown) return;
-  const x = e.touches[0].pageX - sliderMobile.offsetLeft;
-  const walk = (x - startX) * 2;
-  sliderMobile.scrollLeft = scrollLeft - walk;
-});
+// Infinite scroll effect
+sliderMobile.innerHTML += sliderMobile.innerHTML;
