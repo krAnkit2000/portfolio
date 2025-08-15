@@ -836,21 +836,37 @@ width: max-content;
 .slider {
     display: flex;
     gap: 20px; /* Cards ke beech gap */
-    animation: scroll 10s linear infinite;
+    animation: scroll 8s linear infinite;
 }
 
+
+
 .Project {
-    flex: 0 0 calc((100% - 40px) / 3); /* 3 cards dikhayein, gap include */
+    flex: 0 0 calc((100% - 40px) / 3);
+    background: linear-gradient(145deg, #fdfbfb, #ebedfa);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1), 0 6px 15px rgba(0,0,0,0.05); /* soft layered shadows */
-    transition: transform 0.30s ease, box-shadow 0.35s ease, background 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1), 0 6px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.35s ease, background 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 380px;
-    background: linear-gradient(145deg, #e0e4ff, #cfd8ff); /* hover gradient effect */
-
 }
+@media (max-width: 1024px) {
+    .Project { flex: 0 0 calc((100% - 20px) / 2); }
+}
+
+@media (max-width: 640px) {
+    .Project { flex: 0 0 90%; margin: 0 auto; height: auto; }
+}
+
+/* Continuous scroll animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* -50% because duplicate cards added */
+}
+
+
 
 .Project:hover {
     transform: translateY(-6px) scale(1.03);

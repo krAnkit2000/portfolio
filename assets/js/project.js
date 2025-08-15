@@ -50,3 +50,48 @@ allProjects.forEach(p => {
         </div>
     `;
 });
+
+// for mobile slider 
+
+const sliderMobile = document.querySelector('.sliderMobile');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+sliderMobile.addEventListener('mousedown', (e) => {
+  isDown = true;
+  sliderMobile.classList.add('active');
+  startX = e.pageX - sliderMobile.offsetLeft;
+  scrollLeft = sliderMobile.scrollLeft;
+});
+sliderMobile.addEventListener('mouseleave', () => {
+  isDown = false;
+  sliderMobile.classList.remove('active');
+});
+sliderMobile.addEventListener('mouseup', () => {
+  isDown = false;
+  sliderMobile.classList.remove('active');
+});
+sliderMobile.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - sliderMobile.offsetLeft;
+  const walk = (x - startX) * 2; // scroll-fast
+  sliderMobile.scrollLeft = scrollLeft - walk;
+});
+
+// Touch events for mobile
+sliderMobile.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - sliderMobile.offsetLeft;
+  scrollLeft = sliderMobile.scrollLeft;
+});
+sliderMobile.addEventListener('touchend', () => {
+  isDown = false;
+});
+sliderMobile.addEventListener('touchmove', (e) => {
+  if(!isDown) return;
+  const x = e.touches[0].pageX - sliderMobile.offsetLeft;
+  const walk = (x - startX) * 2;
+  sliderMobile.scrollLeft = scrollLeft - walk;
+});
