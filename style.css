@@ -857,7 +857,7 @@ position: relative;
         border-radius: 3px;
     }
 }
-add
+
 /*--------------------------------------------------------------
 # Project  Section
 --------------------------------------------------------------*/
@@ -897,11 +897,7 @@ width: max-content;
     .Project { flex: 0 0 90%; margin: 0 auto; height: auto; }
     
 }
-/* @media (max-width: 768px) {
-    #desktop {
-        display: none;
-    }
-} */
+
 
 /* Continuous scroll animation */
 @keyframes scroll {
@@ -1053,100 +1049,6 @@ width: max-content;
         flex: 0 0 90%; /* 1 card on mobile */
     }
 }
-
-
-/*  */
-/* #Project {
-
-    background-image: url(/assets/images/grid.png);
-    background-size: contain;
-    
-}
-
-.Project{
-    margin: 0 15px;
-   
-}
-
-.Project .description{
-
-color: #ff6600; 
-    position: relative;
-    font-style: italic;
-    font-size: 17px;
-    line-height: 26px;
-    padding: 30px 20px;
-    border: 1px solid rgba(144, 81, 227, .5);
-    border-left: 3px solid rgba(144, 81, 227, .8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-
-/* Notch Icon for  Div */
-/* .Project .description:after{
-    position: absolute;
-    bottom: -11px;
-    left: 65px;
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: rgba(144, 81, 227, .8);
-    border-bottom: 1px solid rgba(144, 81, 227, .5);
-    border-left: 1px solid rgba(144, 81, 227, .5);
-    transform: skewY(-45deg);
-    -webkit-transform: skewY(-45deg);  
-}
-
-.Project .pic{
-    display: inline-block;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-    margin: 20px 30px 10px;
-    border: solid 3px transparent;
-    border-radius: 50%;
-    background-image: var(--primary-gradient-color), radial-gradient(circle at top left, var(--primary-color),var(--secondary-color));;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-
-.Project .pic img{
-    width: inherit;
-    height: auto;
-}
-
-.Project .detail{
-    margin: 0 30px;
-}
-
-.Project .detail .name{
-    color: var(--heading-color);
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 0 5px 0;
-}
-
-.Project .detail .role{
-    font-family: initial;
-    font-size: 14px;
-    font-weight: 400;
-    color: rgb(253, 91, 27);
-}
-
-.owl-nav {
-    
-    display: flex;
-    position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
-    width: 100%;
-    justify-content: space-between;
-}
-
-.owl-prev span,
-.owl-next span {
-    font-size: 25px;
-}  */
 
 
 /*--------------------------------------------------------------
