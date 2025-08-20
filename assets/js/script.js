@@ -77,4 +77,8 @@ $(document).ready(function(){
 const darkMode = window.matchMedia("(prefers-color-scheme:dark)").matches;
 
 
-  
+  //git repo
+  setInterval(() => {
+    const img = document.getElementById('ghchart');
+    img.src = `https://ghchart.rshah.org/krAnkit2000?ts=${Date.now()}`;
+  }, 60 * 60 * 1000);
