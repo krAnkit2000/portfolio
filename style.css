@@ -1064,18 +1064,19 @@ width: max-content;
 }
 
 .rainbow-text {
-    font-weight: bold;
+    font-weight: 600;
+
     background: linear-gradient(
       270deg,
       #ff0000,
       #ff9900,
-      #ffee00,
+      #d1c304,
       #33ff00,
       #00ffee,
       #0066ff,
-      #cc00ff,
+      #cf79e4,
       #ff0099,
-      #ff0000
+      #e58282
     );
     background-size: 200% 200%;
     -webkit-background-clip: text;
