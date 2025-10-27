@@ -17,7 +17,7 @@ const projects = [
 
  {
         name: "FashionHive",
-        description: "FashionHive is your one-stop destination for fashion shopping. Discover trending outfits, explore curated collections, and shop from top brands — all in one buzzing fashion hub. With a smooth shopping flow, personalized recommendations, and easy checkout, FashionHive makes fashion shopping smarter, faster, and more fun.",
+        description: "FashionHive – A shopping workflow that lets users select items, add them to the cart, and place an order.",
         tech: "React ,  Firebase ,Js",
         img: "https://img.freepik.com/free-psd/shopping-vertical-background_23-2150409467.jpg?t=st=1761567415~exp=1761571015~hmac=9649847bd6483828c869f5fa8f030d33f534d8b1bd11736cd7708362911e26a3&w=1480",
         link: "https://e-com-beta-five.vercel.app/login?mode=login"
