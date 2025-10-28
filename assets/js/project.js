@@ -13,19 +13,13 @@ const projects = [
         img: "https://img.freepik.com/free-photo/sunny-cloud-3d-render_23-2152008837.jpg?ga=GA1.1.5696933.1737007306&semt=ais_hybrid&w=740&q=80",
         link: "https://weathercurrentcheck.netlify.app/"
     },
-
-
- {
+    {
         name: "FashionHive",
         description: "FashionHive – A shopping workflow that lets users select items, add them to the cart, and place an order.",
-        tech: "React ,  Firebase ,Js",
+        tech: "React ,  Firebase ,Js,CSS",
         img: "https://img.freepik.com/free-psd/shopping-vertical-background_23-2150409467.jpg?t=st=1761567415~exp=1761571015~hmac=9649847bd6483828c869f5fa8f030d33f534d8b1bd11736cd7708362911e26a3&w=1480",
         link: "https://e-com-beta-five.vercel.app/login?mode=login"
     },
-
-
-
-
     
     {
         name: "Random Password Generator",
