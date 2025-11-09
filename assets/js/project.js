@@ -6,6 +6,17 @@ const projects = [
         img: "https://img.freepik.com/free-vector/music-note-with-wave-coming-out_1394-638.jpg?t=st=1755270104~exp=1755273704~hmac=c4e94e8b629c370b5409d3c0c4938636d519c33b444f0c372d8cc4c75ac64b8c&w=1060",
         link: "https://music-gaana.vercel.app/"
     },
+
+
+{
+        name: "Real time chat",
+        description: "⚡ Real-time messaging (instant updates, no refresh required 🧑‍🤝‍🧑 One-to-one & group chats Join by Chat ID",
+        tech: "React | Firebase Authentication | Firebase Firestore / Realtime DB | CSS / Tailwind",
+        img: "https://img.freepik.com/free-vector/business-people-arranging-appointment-digital-booking-app_74855-20006.jpg?t=st=1762673957~exp=1762677557~hmac=20e61eaf96cc3f401879b7087b12e025e12492ce2a462356512d7370e2c9c6b7&w=1480",
+        link: "https://quickchat-box.vercel.app/"
+    },
+
+    
     {
         name: "Weather App",
         description: "Shows temperature, current weather, humidity, and wind speed.",
