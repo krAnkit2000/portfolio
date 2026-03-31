@@ -1,20 +1,23 @@
 const projects = [
+
+    {
+        name: "Chat",
+        description: "Developed a real-time chat web application .Enabling instant messaging without page reloads.Designed a fully responsive and modern user interface from scratch, ensuring a seamless experience across desktop and mobile devices.",
+        tech: "HTML5, CSS3, JavaScript, Firebase",
+        img: "https://img.freepik.com/free-vector/happy-man-online-dating-via-laptop_74855-7495.jpg?t=st=1774963091~exp=1774966691~hmac=894aa5b9c6b4a49a1faac6a1e8ea693917fff15dd600ca86ab7713c90caf2a9c&w=1480",
+        link: "https://chat-60.vercel.app/"
+        
+    },
+
     {
         name: "Music Web App",
         description: "Stream 30-sec song previews from Apple Music with autoplay & download to local storage.",
         tech: "HTML5, CSS3, JavaScript, Apple Music API",
         img: "https://img.freepik.com/free-vector/music-note-with-wave-coming-out_1394-638.jpg?t=st=1755270104~exp=1755273704~hmac=c4e94e8b629c370b5409d3c0c4938636d519c33b444f0c372d8cc4c75ac64b8c&w=1060",
         link: "https://music-gaana.vercel.app/"
+        
     },
 
-
-{
-        name: "Real time chat",
-        description: "⚡ Real-time messaging (instant updates, no refresh required 🧑‍🤝‍🧑 One-to-one & group chats Join by Chat ID",
-        tech: "React | Firebase Authentication | Firebase Firestore / Realtime DB | CSS / Tailwind",
-        img: "https://img.freepik.com/free-vector/business-people-arranging-appointment-digital-booking-app_74855-20006.jpg?t=st=1762673957~exp=1762677557~hmac=20e61eaf96cc3f401879b7087b12e025e12492ce2a462356512d7370e2c9c6b7&w=1480",
-        link: "https://quickchat-box.vercel.app/"
-    },
 
     
     {
@@ -56,36 +59,39 @@ const allProjects = [...projects, ...projects];
 
 allProjects.forEach(p => {
     slider.innerHTML += `
-        <div class="Project" id="desktop">
-            <a href="${p.link}" target="_blank">
+    <div class="Project">
+        <a href="${p.link}" target="_blank">
+            <div class="img-container">
                 <img src="${p.img}" alt="${p.name}">
+            </div>
+            <div class="detail">
+                <h3 class="name">${p.name}</h3>
+                <small class="role">${p.tech}</small>
                 <p class="description">${p.description}</p>
-                <div class="detail">
-                    <h3 class="name">${p.name}</h3>
-                    <small class="role">${p.tech}</small>
-                </div>
-            </a>
-          
-        </div>
-    `;
+            </div>
+        </a>
+    </div>
+`;
 });
 
 // for mobile slider 
 const sliderMobile = document.getElementById('project-slider-mobile');
 
 allProjects.forEach(p => {
-    sliderMobile.innerHTML += `
-        <div class="Project" id="mobile">
-            <a href="${p.link}" target="_blank">
+    slider.innerHTML += `
+    <div class="Project">
+        <a href="${p.link}" target="_blank">
+            <div class="img-container">
                 <img src="${p.img}" alt="${p.name}">
+            </div>
+            <div class="detail">
+                <h3 class="name">${p.name}</h3>
+                <small class="role">${p.tech}</small>
                 <p class="description">${p.description}</p>
-                <div class="detail">
-                    <h3 class="name">${p.name}</h3>
-                    <small class="role">${p.tech}</small>
-                </div>
-            </a>
-        </div>
-    `;
+            </div>
+        </a>
+    </div>
+`;
 });
 
 // Infinite scroll effect
