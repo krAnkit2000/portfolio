@@ -883,7 +883,7 @@ position: relative;
 .slider {
     display: flex;
     gap: 25px;
-    width: max-content;
+    width: -webkit-fill-available;
     animation: scrollCards 25s linear infinite;
 }
 
