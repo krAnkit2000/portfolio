@@ -6,7 +6,7 @@
     if (switchThemeBtn) {
         switchThemeBtn.innerHTML = theme === 'dark' ?  '<i class="fa-regular fa-sun "></i>' : '<i class="fa-solid fa-sun "></i>';
     }
-    //console.log(`Switched to ${theme} theme`);
+   
 }
 
 var currentTheme = localStorage.getItem('theme') || 'dark';
