@@ -133,17 +133,27 @@ function updateActiveCard() {
         const cardCenter = box.left + box.width / 2;
 
         if (Math.abs(center - cardCenter) < 100) {
-            card.style.transform = "scale(1.05)";
-            card.style.opacity = "1";
+           card.style.transform = "scale(1.02)";
+card.style.opacity = "1";
         } else {
-            card.style.transform = "scale(0.9)";
-            card.style.opacity = "0.6";
+     card.style.transform = "scale(0.96)";
+card.style.opacity = "0.7";
         }
     });
 }
 
 // scroll par run
-slider.addEventListener("scroll", updateActiveCard);
+// slider.addEventListener("scroll", updateActiveCard);
+let ticking = false;
 
+slider.addEventListener("scroll", () => {
+    if (!ticking) {
+        requestAnimationFrame(() => {
+            updateActiveCard();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
 // first load par bhi run
 updateActiveCard();

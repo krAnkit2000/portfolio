@@ -881,6 +881,8 @@ position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     padding: 10px;
+     align-items: center; 
+      scroll-snap-type: x mandatory;
 }
 
 .slider::-webkit-scrollbar {
@@ -889,6 +891,8 @@ position: relative;
 
 /* ===== CARD ===== */
 .Project {
+      scroll-snap-align: center;
+    min-height: 30rem;
     flex: 0 0 300px;
     scroll-snap-align: center;
     border-radius: 16px;
@@ -896,6 +900,12 @@ position: relative;
     background: #ffffff;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  /* mobile card  */
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    transform-origin: center center;
+    will-change: transform;
+    
 }
 
 /* Hover effect */
