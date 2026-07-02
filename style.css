@@ -1,4 +1,6 @@
-
+body{
+        padding: 1rem;
+}
 /* Style rules for dark mode */
 @media (prefers-color-scheme: dark) {
     body {
